@@ -1,0 +1,478 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #070707;
+  text-align: center;
+}
+
+header {
+  background-color: #070707;
+  padding: 15px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Inknut Antiqua", serif;
+  margin-left: -629px;
+  margin-top: -54px;
+}
+
+.port {
+  color: #FFFFFF;
+}
+
+.folio {
+  color: #69968B;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 137%;
+  height: 62px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 42px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: bolder;
+
+}
+
+.nav-links a:hover {
+  color: #78cfd7;
+}
+
+.nina {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.avatar {
+  position: relative;
+  margin-top: 78px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px #61b7ba;
+  margin-left: 615px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 30px 10px rgba(108, 194, 191, 0.6);
+  }
+
+  50% {
+    box-shadow: 0 0 40px 20px rgba(110, 220, 207, 0.8);
+  }
+}
+
+.projects-container {
+  text-align: center;
+  margin: 50px;
+}
+
+
+.typing-animation {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.cursor {
+  display: inline-block;
+  font-weight: bold;
+  animation: blink 0.8s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.study {
+  color: #78D4BF;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Inknut Antiqua", serif;
+}
+
+
+
+.resume-btn {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Inknut Antiqua", serif;
+  color: black;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 60px;
+  padding: 1px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #c0c0c0;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.aboutme {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Inknut Antiqua", serif;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card {
+  background-color: #78D4BF;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: bolder;
+
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "Instrument Sans", sans-serif;
+  margin-top: -51px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-left: -268px;
+}
+
+.card.black-hover {
+  background-color: rgb(95, 96, 99);
+  color: white;
+}
+
+
+.container-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 234px;
+}
+
+
+.title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Inknut Antiqua", serif;
+}
+
+.content {
+  background-color: #78D4BF;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.image-section img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-section {
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: left;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: bolder;
+  padding: 20px;
+  border: -1px solid transparent;
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.text-section:hover {
+  box-shadow: 0 0 15px 5px #000000;
+  border-radius: 10px;
+}
+
+.text-section strong {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Inknut Antiqua", serif;
+}
+
+
+.buttoncta {
+  margin-top: 73px;
+  width: 100%;
+  text-align: center;
+}
+
+.cta-button {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Inknut Antiqua", serif;
+  color: white;
+  background-color: #4CAF92;
+  border: none;
+  border-radius: 60px;
+  padding: 10px 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cta-button.loading {
+  pointer-events: none;
+  color: transparent;
+}
+
+.cta-button.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spinner 0.8s linear infinite;
+  transform: translate(-50%, -50%);
+}
+
+
+@keyframes spinner {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.cta-button:hover {
+  background-color: #007d73;
+  transform: scale(1.05);
+}
+
+
+.cta-button:hover {
+  background-color: #007d73;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.contact-section {
+  background-color: #4CAF92;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section h2 {
+  color: #000000;
+  margin: 0 0 10px 0;
+  font-size: 38px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: bolder;
+}
+
+.icons {
+  margin-top: 10px;
+  text-decoration: none;
+  
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a::after,
+a::before {
+  content: none;
+}
+
+
+.icons a img {
+  width: 32px;
+  height: 32px;
+  margin: 0 15px;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.icons a img:hover {
+  transform: scale(1.1);
+}
+
+.bottom-section {
+  display: flex;
+  align-items: center;
+}
+
+.message-section {
+  background-color: #ccc;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 400px;
+  height: 275px;
+  font-size: 30px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: bolder;
+}
+
+.image-sectionxray img {
+  max-width: 500px;
+  margin-top: 10px;
+}
+
+.image-section {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    margin-left: 129px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .footer h2 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+    margin-left: 297px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text-section {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+}
