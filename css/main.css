@@ -4,7 +4,7 @@ body {
   background-color: #070707;
   text-align: center;
 }
-
+/* <!-- Header with Navigation -->  */
 header {
   background-color: #070707;
   padding: 15px 0px;
@@ -59,7 +59,7 @@ header {
 .nav-links a:hover {
   color: #78cfd7;
 }
-
+/* <!-- Avatar Section --> */
 .nina {
   display: flex;
   justify-content: center;
@@ -162,7 +162,7 @@ header {
   transition: transform 0.3s ease, background-color 0.3s ease;
   background-color: #c0c0c0;
 }
-
+/* <!-- About Me Section --> */
 .cards-container {
   display: flex;
   gap: 20px;
@@ -227,7 +227,7 @@ header {
   color: white;
 }
 
-
+/* <!-- Projects Section --> */
 .container-projects {
   display: flex;
   flex-direction: column;
@@ -271,7 +271,6 @@ header {
   font-family: "Instrument Sans", sans-serif;
   font-weight: bolder;
   padding: 20px;
-  border: -1px solid transparent;
   transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
@@ -343,7 +342,7 @@ header {
 .cta-button:hover {
   background-color: #007d73;
 }
-
+/* <!-- Contact Section --> */
 .footer {
   text-align: center;
   display: flex;
