@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
         button.classList.add("loading");
 
-// button loading
+
         setTimeout(() => {
             button.classList.remove("loading");
             alert("Loading Complete!");
